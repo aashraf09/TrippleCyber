@@ -1,0 +1,576 @@
+/* GENERAL SETUP */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: white;
+    width: 100vw;
+}
+
+a {
+    color: var(--sub-text-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--green-acent);
+}
+
+:root {
+    --action-btn-color: #00A67E;
+    --action-btn-text-color: #fff;
+    --main-bg-color: #091929;
+    --green-acent: #00A67E;
+    --red-acent: #E01D0D;
+    --sub-text-color: #AFBCC9;
+}
+
+/* GENERIC CLASSES */
+/* --------------------------------------- */
+/* ------- BUTTONS -------- */
+.action-btn {
+    padding: 16px 24px;
+    background-color: var(--action-btn-color);
+    color: var(--action-btn-text-color);
+    border-radius: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+/* -------- DISPLAY PROPERTIES ---------- */
+h1 {
+    font-size: 6px;
+    letter-spacing: -2%;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: -2%;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: -2%;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.body_small {
+    font-size: 10px;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.basis-half {
+    flex-basis: 50%;
+}
+
+.btn_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.red-text-span {
+    color: var(--red-acent);
+}
+
+.green-text-span {
+    color: var(--green-acent);
+}
+
+.radial-gradient-bg {
+    background: rgb(75, 127, 179);
+    background: radial-gradient(circle, rgba(75, 127, 179, 1) 0%, rgba(9, 25, 41, 1) 100%);
+}
+
+
+
+
+
+
+/* -------- NAVBAR SETTINGS --------------- */
+.navbar {
+    padding: 18px 80px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: var(--action-btn-color);
+}
+
+.nav-link:active {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: var(--main-bg-color);
+}
+
+.dropdown-item {
+    color: white;
+}
+
+
+/* ----------- FOOTER STYLING ---------------- */
+
+.footer-content {
+    /* flex-direction: row; */
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 80px 80px;
+}
+
+footer h3 {
+    padding: 20px 0;
+}
+
+footer a,
+footer p {
+    font-size: 16px;
+    color: var(--sub-text-color);
+}
+
+.social-icons {
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+
+
+
+/* ------------ HOME PAGE STYLING -------------- */
+.landing-page {
+    height: calc(100vh - 110px);
+    /* width: 100vw; */
+    background-image: url('./assets/main-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 160px;
+}
+
+.offerings {
+    padding: 100px;
+    justify-content: start;
+    align-items: start;
+    gap: 24px;
+}
+
+.offerings-right {
+    padding: 24px;
+    gap: 60px;
+}
+
+.offer {
+    gap: 24px;
+}
+
+.offer a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.68px;
+}
+
+.get-tripple-cyber {
+    background-image: url('./assets/get-triple-cyber.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-section {
+    padding: 80px;
+    align-items: center;
+    gap: 100px;
+}
+
+.clients-logo {
+    width: 90vw;
+    justify-content: space-evenly;
+}
+
+.clients-logo h3 {
+    border-right: 1px solid #AFBCC9;
+    padding: 10px 30px;
+}
+
+.clients-logo .images-section {
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+.client-review {
+    width: 60vw;
+    gap: 100px;
+}
+
+.contract {
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contract ul {
+    color: var(--sub-text-color);
+    padding: 0 70px;
+}
+
+.careers {
+    text-align: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.statistics {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    width: 80vw;
+    padding: 30px 0;
+}
+
+.statistics-explanation {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    position: relative;
+}
+
+.vertical-line::after {
+    content: '';
+    position: absolute;
+    height: 60%;
+    border-right: 2px solid var(--sub-text-color);
+    top: 30px;
+    right: -50px;
+}
+
+.join-us {
+    position: relative;
+    height: 60vh;
+}
+
+.bottom-box {
+    background-color: var(--main-bg-color);
+    width: 80vw;
+    margin: auto;
+    padding: 80px;
+    border-radius: 50px;
+    top: -50px;
+    left: 10%;
+    position: absolute;
+    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.item-link {
+    justify-content: space-between;
+    gap: 0;
+}
+
+
+/* ABOUT PAGE STYLING */
+.about-page {
+    height: calc(100vh - 110px);
+    width: 100vw;
+    background-image: url('./assets/bg-boxes.svg'), radial-gradient(circle, rgba(75,127,179,0.5018382352941176) 0%, rgba(9,25,41,0) 80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* ------- CUSTOM CHECKBOX STYLING ----------- */
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: 20px;
+}
+
+.control:hover input~.control_indicator,
+.control input:focus~.control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked~.control_indicator {
+    background: #00A67E;
+}
+
+.control:hover input:not([disabled]):checked~.control_indicator,
+.control input:checked:focus~.control_indicator {
+    background: #00A67E;
+}
+
+.control input:disabled~.control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked~.control_indicator:after {
+    display: block;
+}
+
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled~.control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -2%;
+    }
+
+    h3 {
+        font-size: 20px;
+        letter-spacing: -2%;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar-brand img {
+        height: 35px;
+        width: 164px;
+    }
+
+    .sm_flex_col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .clients-logo {
+        align-items: baseline;
+    }
+
+    .landing-page {
+        width: 100vw;
+        padding: 40px 30px;
+        height: max-content;
+    }
+
+    .display-hidden {
+        display: none;
+    }
+
+    .offer img {
+        width: 100%;
+    }
+
+    .offerings {
+        padding: 30px;
+        justify-content: start;
+        align-items: start;
+        gap: 24px;
+        width: 99vw;
+        margin: auto;
+    }
+
+    .offerings-right {
+        padding: 1px;
+        gap: 60px;
+    }
+
+    .offer a {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 0.68px;
+    }
+
+    .get-tripple-cyber {
+        padding: 0 20px;
+    }
+
+    .clients-section {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .clients-logo h3 {
+        border-right: 1px solid #AFBCC9;
+        padding: 10px 30px;
+    }
+
+    .clients-logo .images-section {
+        width: 70vw;
+        justify-content: space-evenly;
+    }
+
+    .client-review {
+        width: 60vw;
+        gap: 100px;
+    }
+
+    .contract {
+        padding: 0 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contract ul {
+        color: var(--sub-text-color);
+        padding: 0 70px;
+    }
+
+    .careers {
+        text-align: center;
+        align-items: center;
+        padding: 60px 0;
+        /* margin-bottom: 50vh; */
+    }
+
+    .statistics {
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 20px;
+        width: 80vw;
+        padding: 30px 0;
+    }
+
+    .statistics-explanation {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        position: relative;
+    }
+
+    .vertical-line::after {
+        content: '';
+        position: absolute;
+        height: 60%;
+        border-right: 2px solid var(--sub-text-color);
+        top: 30px;
+        right: -50px;
+    }
+
+    .join-us {
+        position: relative;
+        height: 60vh;
+    }
+
+    .bottom-box {
+        background-color: var(--main-bg-color);
+        width: 80vw;
+        margin: auto;
+        padding: 80px;
+        border-radius: 50px;
+        top: -50px;
+        left: 10%;
+        position: absolute;
+        box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+    }
+
+}
