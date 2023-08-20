@@ -10,7 +10,6 @@ function reveal() {
         reveals[i].classList.add("animate");
       } else {
         reveals[i].classList.remove("animate");
-        reveals[i].classList.add("display-hidden");
       }
     }
   }
