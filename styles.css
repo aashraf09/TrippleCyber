@@ -10,6 +10,7 @@ body {
     background-color: var(--main-bg-color);
     color: white;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 a {
@@ -105,6 +106,7 @@ p {
     justify-content: space-between;
 }
 
+
 .text-justify {
     text-align: justify;
 }
@@ -129,7 +131,7 @@ p {
 
 /* -------- NAVBAR SETTINGS --------------- */
 .navbar {
-    padding: 18px 80px;
+    padding: 13px 80px;
 }
 
 .nav-link {
@@ -185,7 +187,7 @@ footer p {
 
 /* ------------ HOME PAGE STYLING -------------- */
 .landing-page {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 100px);
     /* width: 100vw; */
     background-image: url('./assets/main-bg.svg');
     background-size: cover;
@@ -325,9 +327,9 @@ footer p {
 
 /* ABOUT PAGE STYLING */
 .about-page {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 100px);
     width: 100vw;
-    background-image: url('./assets/bg-boxes.svg'), radial-gradient(circle, rgba(75,127,179,0.5018382352941176) 0%, rgba(9,25,41,0) 80%);
+    background-image: url('./assets/bg-boxes.svg'), radial-gradient(circle, rgba(75, 127, 179, 0.5018382352941176) 0%, rgba(9, 25, 41, 0) 80%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -335,6 +337,47 @@ footer p {
     justify-content: center;
     font-weight: bold;
 }
+
+.our-story {
+    width: 60vw;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.list-flex {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.list-flex p {
+    padding-top: 15px;
+}
+
+.ecosystem{
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.ecosystem-text{
+    padding: 0 80px ;
+}
+
+.ecosystem-features{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.feature-img{
+    height: 220px;
+    width: 400px;
+}
+
 
 /* ------- CUSTOM CHECKBOX STYLING ----------- */
 .control {
