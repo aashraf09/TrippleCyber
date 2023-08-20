@@ -46,6 +46,10 @@ a:active {
     border: none;
 }
 
+.icon-btn {
+    align-items: center;
+    gap: 10px;
+}
 
 
 
@@ -132,6 +136,8 @@ p {
 /* -------- NAVBAR SETTINGS --------------- */
 .navbar {
     padding: 13px 80px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .nav-link {
@@ -164,6 +170,8 @@ p {
     justify-content: start;
     flex-wrap: wrap;
     gap: 60px;
+    max-width: 1440px;
+    margin: auto;
     padding: 80px 80px;
 }
 
@@ -187,13 +195,18 @@ footer p {
 
 /* ------------ HOME PAGE STYLING -------------- */
 .landing-page {
-    height: calc(100vh - 100px);
+    height: 550px;
     /* width: 100vw; */
     background-image: url('./assets/main-bg.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 0 160px;
+}
+
+.main-landing {
+    max-width: 1440px;
+    margin: auto;
 }
 
 .offerings {
@@ -258,9 +271,11 @@ footer p {
 }
 
 .contract {
-    padding: 0 80px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .contract ul {
@@ -268,9 +283,12 @@ footer p {
     padding: 0 70px;
 }
 
+
 .careers {
     text-align: center;
     align-items: center;
+    width: 1440px;
+    margin: auto;
     padding: 60px 0;
 }
 
@@ -302,17 +320,20 @@ footer p {
 
 .join-us {
     position: relative;
-    height: 60vh;
+    height: 50vh;
 }
 
 .bottom-box {
     background-color: var(--main-bg-color);
-    width: 80vw;
+    width: 1080px;
+    max-width: 1440px;
     margin: auto;
-    padding: 80px;
+    margin: auto;
+    padding: 60px;
     border-radius: 50px;
+    transform-origin: center center;
     top: -50px;
-    left: 10%;
+    left: calc((100vw - 1080px)/2);
     position: absolute;
     box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
@@ -321,13 +342,13 @@ footer p {
 
 .item-link {
     justify-content: space-between;
-    gap: 0;
+    gap: 10px;
 }
 
 
 /* ABOUT PAGE STYLING */
 .about-page {
-    height: calc(100vh - 100px);
+    height: 550px;
     width: 100vw;
     background-image: url('./assets/bg-boxes.svg'), radial-gradient(circle, rgba(75, 127, 179, 0.5018382352941176) 0%, rgba(9, 25, 41, 0) 80%);
     background-size: cover;
@@ -336,6 +357,8 @@ footer p {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    padding: 80px 30px;
+    text-align: center;
 }
 
 .our-story {
@@ -353,29 +376,96 @@ footer p {
     padding-top: 15px;
 }
 
-.ecosystem{
+.ecosystem {
     gap: 30px;
     text-align: center;
     align-items: center;
     padding: 40px;
 }
 
-.ecosystem-text{
-    padding: 0 80px ;
+.ecosystem-features p {
+    line-height: 70%;
 }
 
-.ecosystem-features{
+.ecosystem-text {
+    padding: 0 80px;
+}
+
+.ecosystem-features {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
     text-align: center;
+}
+
+.ecosystem-feature {
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-img {
+    height: 220px;
+    width: 400px;
+}
+
+.careers {
+    width: 100vw;
+    padding: 80px 0;
+    margin: auto;
+}
+
+.career-statistics {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+}
+
+.career-statistics-explanation {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-join-us {
+    border-radius: 40px;
+    margin: auto;
+    width: 1080px;
+    max-width: 1440px;
+    padding: 60px;
+    box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
+    -webkit-box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
+    -moz-box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
+}
+
+.carousel {
+    display: none;
+    z-index: 1;
+}
+
+.carousel-item{
+    height: 350px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: -30px;
+    color: var(--green-acent);
+    z-index: 1;
+}
+
+.carousel-nav{
+    width: 10vw;
+    margin: 0 50px;
 
 }
 
-.feature-img{
-    height: 220px;
-    width: 400px;
+.carousel-nav img {
+    position: absolute;
+    bottom: -20px;
+    /* left: 30px; */
 }
 
 
@@ -458,8 +548,8 @@ footer p {
 @media screen and (max-width: 768px) {
     h2 {
         font-weight: bold;
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 32px;
+        line-height: normal;
         letter-spacing: -2%;
     }
 
@@ -611,9 +701,43 @@ footer p {
         top: -50px;
         left: 10%;
         position: absolute;
-        box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
-        -webkit-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
+        -webkit-box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
+        -moz-box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
+    }
+
+    /* ABOUT PAGE */
+    .our-story {
+        width: 90vw;
+        margin: auto;
+        padding: 60px 0;
+    }
+
+    .ecosystem {
+        width: 90vw;
+        gap: 30px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    .ecosystem-text {
+        padding: 0 20px;
+    }
+
+    .feature-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .careers{
+     padding: 20px;
+     margin-top: 50px;
+    }
+
+    .carousel{
+        display: block;
     }
 
 }
