@@ -543,6 +543,28 @@ footer p {
     border-color: #7b7b7b;
 }
 
+/* animation */
+.animate{
+    animation: myAnim 1s ease-in-out 0s 1 normal forwards;
+    visibility: visible;
+}
+
+.visibility-hidden{
+    visibility: hidden;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 
 
 @media screen and (max-width: 768px) {
