@@ -10,7 +10,7 @@ body {
     background-color: var(--main-bg-color);
     color: white;
     width: 100vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -104,9 +104,9 @@ p {
 .btn_group {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 40px;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -206,6 +206,11 @@ footer p {
 
 .main-landing {
     max-width: 1440px;
+    margin: auto;
+}
+
+.right-side img {
+    width: 80%;
     margin: auto;
 }
 
@@ -475,18 +480,19 @@ footer p {
     gap: 40px;
 }
 
-.our-mission{
+.our-mission {
     gap: 20px;
 }
 
-.our-culture, .join{
+.our-culture,
+.join {
     width: 80vw;
     margin: auto;
     padding: 80px;
     text-align: center;
 }
 
-.our-values{
+.our-values {
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -494,27 +500,43 @@ footer p {
     margin: auto;
 }
 
-.value{
+.value {
     align-items: center;
     width: 30vw;
     gap: 15px;
 }
 
-.open-jobs{
+.open-jobs {
     width: 100%;
     margin: auto;
     gap: 56px;
     padding: 56px;
 }
 
-.job{
+.job {
     width: 100%;
 }
 
-.job-specifications{
+.job-specifications {
     gap: 20px;
 }
 
+/* -------- product page */
+.product-page {
+    background-image: url('./assets/bg-boxes.svg');
+    padding: 80px;
+    width: 100vw;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.product-description-section {
+    padding: 80px;
+}
+
+.product-description{
+    gap: 80px;
+}
 
 /* ------- CUSTOM CHECKBOX STYLING ----------- */
 .control {
@@ -615,6 +637,15 @@ footer p {
 
 
 @media screen and (max-width: 768px) {
+    .btn_group {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     h2 {
         font-weight: bold;
         font-size: 32px;
@@ -647,6 +678,7 @@ footer p {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        gap: 30px;
     }
 
     .action-btn {
@@ -670,6 +702,10 @@ footer p {
         width: 100%;
         padding: 40px 30px;
         height: max-content;
+    }
+
+    .main-landing {
+        width: 100%;
     }
 
     .display-hidden {
@@ -789,9 +825,9 @@ footer p {
     }
 
     /* ABOUT PAGE */
-.about-page{
-    height: 300px;
-}
+    .about-page {
+        height: 300px;
+    }
 
     .our-story {
         width: 90vw;
@@ -827,24 +863,25 @@ footer p {
     }
 
     /* careers page */
-    .missions{
+    .missions {
         width: 90vw;
         padding: 60px 20px;
     }
 
-    .our-culture, .join{
+    .our-culture,
+    .join {
         width: 90vw;
         margin: auto;
         padding: 20px;
         text-align: center;
     }
 
-    .value{
+    .value {
         width: 100%;
     }
 
-    .job{
-        align-items:start;
+    .job {
+        align-items: start;
         justify-content: start;
         text-align: center;
         gap: 10px;
