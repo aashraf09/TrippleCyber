@@ -10,7 +10,7 @@ body {
     background-color: var(--main-bg-color);
     color: white;
     width: 100vw;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 a {
@@ -534,8 +534,56 @@ footer p {
     padding: 80px;
 }
 
-.product-description{
+.product-description {
     gap: 80px;
+}
+
+/* -------- services page ------------- */
+.service-page {
+    height: 550px;
+    /* width: 100vw; */
+    background-image: url('./assets/services/service1-header.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 160px;
+}
+
+.service-features {
+    width: 80vw;
+    max-width: 1440px;
+    margin: auto;
+    padding: 80px;
+    gap: 40px;
+}
+
+.service-features h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.features {
+    gap: 30px;
+}
+
+.feature {
+    gap: 10px;
+    background-color: #152636;
+    padding: 40px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.border-green {
+    border-left: 2px solid var(--green-acent);
+}
+
+.border-red {
+    border-left: 2px solid var(--red-acent);
+}
+
+.border-off-white {
+    border-left: 2px solid var(--sub-text-color);
 }
 
 /* ------- CUSTOM CHECKBOX STYLING ----------- */
@@ -887,4 +935,28 @@ footer p {
         gap: 10px;
     }
 
+    /* service page */
+    .service-page {
+        padding: 0 40px;
+    }
+
+    .service-features {
+        width: 90vw;
+        max-width: 1440px;
+        margin: auto;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .features {
+        gap: 30px;
+    }
+
+    .feature {
+        gap: 10px;
+        background-color: #152636;
+        padding: 30px 20px;
+        width: 100%;
+        border-radius: 20px;
+    }
 }
