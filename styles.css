@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    color: var(--sub-text-color);
+    color: white;
     text-decoration: none;
 }
 
@@ -121,6 +121,10 @@ p {
 
 .green-text-span {
     color: var(--green-acent);
+}
+
+.offwhite-accent {
+    color: var(--sub-text-color);
 }
 
 .radial-gradient-bg {
@@ -586,6 +590,38 @@ footer p {
     border-left: 2px solid var(--sub-text-color);
 }
 
+.contact-form {
+    background-color: #152636;
+}
+
+/* ------- contact page -------- */
+.contact-landing {
+    padding: 80px;
+}
+
+.contact-form{
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.contact-form input, .contact-form textarea{
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.contact-form input:focus{
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.contact-form input::placeholder{
+    color: var(--sub-text-color);
+}
+
+
+
 /* ------- CUSTOM CHECKBOX STYLING ----------- */
 .control {
     font-family: arial;
@@ -959,4 +995,30 @@ footer p {
         width: 100%;
         border-radius: 20px;
     }
+
+    /* ------- contact page -------- */
+.contact-landing {
+    padding: 40px 20px;
+}
+
+.contact-form{
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.contact-form input, .contact-form textarea{
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.contact-form input:focus{
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.contact-form input::placeholder{
+    color: var(--sub-text-color);
+}
 }
