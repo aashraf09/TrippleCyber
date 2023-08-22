@@ -400,7 +400,9 @@ footer p {
 /* ABOUT PAGE STYLING */
 .about-page {
     height: 550px;
-    width: 100vw;
+    width: 80vw;
+    margin: auto;
+    max-width: 1440px;
     background-image: url('./assets/bg-boxes.svg'), radial-gradient(circle, rgba(75, 127, 179, 0.5018382352941176) 0%, rgba(9, 25, 41, 0) 80%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -408,7 +410,7 @@ footer p {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    padding: 80px 30px;
+    padding: 150px 30px;
     text-align: center;
 }
 
