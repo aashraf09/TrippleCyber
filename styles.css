@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: sf-medium;
+    src: url('./SF-Pro-Text/SF-Pro-Text-Medium.otf');
+}
+
+@font-face {
+    font-family: sf-light;
+    src: url('./SF-Pro-Text/SF-Pro-Text-Light.otf');
+}
+
+
+
 body {
     background-color: var(--main-bg-color);
     color: white;
@@ -16,6 +28,8 @@ body {
 a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    font-family: sf-light;
 }
 
 a:active {
@@ -31,11 +45,61 @@ a:active {
     --sub-text-color: #AFBCC9;
 }
 
+h1 {
+    font-size: 64px;
+    letter-spacing: -2%;
+    font-weight: bold;
+    font-family: sf-medium;
+}
+
+h2 {
+    font-size: 56px;
+    letter-spacing: -2%;
+    font-weight: bold;
+    font-family: sf-medium;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: -2%;
+    font-weight: bold;
+    font-family: sf-medium;
+}
+
+.pre-title {
+    letter-spacing: 3%;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sf-light;
+}
+
+p {
+    font-size: 20px;
+    line-height: 140%;
+    font-family: sf-light;
+}
+
+.header {
+    font-size: 40px;
+    letter-spacing: -2%;
+    font-weight: bold;
+    font-family: sf-medium;
+}
+
+.header-mobile {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 140%;
+}
+
+
+
 /* GENERIC CLASSES */
 /* --------------------------------------- */
 /* ------- BUTTONS -------- */
 .action-btn {
-    padding: 16px 24px;
+    padding: 13px 32.5px;
     background-color: var(--action-btn-color);
     color: var(--action-btn-text-color);
     border-radius: 8px;
@@ -44,6 +108,9 @@ a:active {
     font-weight: bold;
     outline: none;
     border: none;
+    letter-spacing: 3%;
+    font-size: 20px;
+    font-family: sf-light;
 }
 
 .icon-btn {
@@ -55,33 +122,7 @@ a:active {
 
 
 /* -------- DISPLAY PROPERTIES ---------- */
-h1 {
-    font-size: 6px;
-    letter-spacing: -2%;
-    font-weight: bold;
-}
 
-h2 {
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 70px;
-    letter-spacing: -2%;
-}
-
-h3 {
-    font-size: 24px;
-    letter-spacing: -2%;
-    font-weight: bold;
-}
-
-p {
-    font-size: 20px;
-    line-height: 140%;
-}
-
-.body_small {
-    font-size: 10px;
-}
 
 .flex_row {
     display: flex;
@@ -246,7 +287,7 @@ footer p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 560px;
     gap: 20px;
     text-align: center;
     align-items: center;
@@ -329,7 +370,7 @@ footer p {
 
 .join-us {
     position: relative;
-    height: 50vh;
+    height: 60vh;
 }
 
 .bottom-box {
@@ -339,14 +380,15 @@ footer p {
     margin: auto;
     margin: auto;
     padding: 60px;
+    height: 360px;
     border-radius: 50px;
     transform-origin: center center;
     top: -50px;
     left: calc((100vw - 1080px)/2);
     position: absolute;
-    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 0px 2px 25px 0px rgba(255, 252, 252, 0.25);
+    -moz-box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.25);
 }
 
 .item-link {
@@ -441,12 +483,19 @@ footer p {
 .about-join-us {
     border-radius: 40px;
     margin: auto;
+    height: 360px;
     width: 1080px;
     max-width: 1440px;
     padding: 60px;
     box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
     -webkit-box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
     -moz-box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.35);
+}
+
+.about-bottom-box {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .carousel {
@@ -531,6 +580,7 @@ footer p {
     padding: 80px;
     width: 100vw;
     max-width: 1440px;
+    height: 550px;
     margin: auto;
 }
 
@@ -571,11 +621,11 @@ footer p {
 }
 
 .feature {
-    gap: 10px;
+    gap: 5px;
     background-color: #152636;
-    padding: 40px;
+    padding: 25px 40px;
     width: 100%;
-    border-radius: 40px;
+    border-radius: 12px;
 }
 
 .border-green {
@@ -599,24 +649,25 @@ footer p {
     padding: 80px;
 }
 
-.contact-form{
+.contact-form {
     padding: 40px;
     border-radius: 20px;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input,
+.contact-form textarea {
     background-color: transparent;
     outline: none;
     color: white;
 }
 
-.contact-form input:focus{
+.contact-form input:focus {
     background-color: transparent;
     color: white;
     outline: none;
 }
 
-.contact-form input::placeholder{
+.contact-form input::placeholder {
     color: var(--sub-text-color);
 }
 
@@ -730,11 +781,10 @@ footer p {
         justify-content: space-between;
     }
 
-    h2 {
+    .header {
+        font-size: 36px;
         font-weight: bold;
-        font-size: 32px;
-        line-height: normal;
-        letter-spacing: -2%;
+        line-height: 140%;
     }
 
     h3 {
@@ -823,6 +873,7 @@ footer p {
 
     .get-tripple-cyber {
         padding: 0 20px;
+        height: 256px;
     }
 
     .clients-section {
@@ -897,9 +948,10 @@ footer p {
     .bottom-box {
         background-color: var(--main-bg-color);
         width: 80vw;
+        height: 360px;
         margin: auto;
-        padding: 80px;
-        border-radius: 50px;
+        padding: 40px 80px;
+        border-radius: 30px;
         top: -50px;
         left: 10%;
         position: absolute;
@@ -967,7 +1019,7 @@ footer p {
     .job {
         align-items: start;
         justify-content: start;
-        text-align: center;
+        text-align: left;
         gap: 10px;
     }
 
@@ -997,28 +1049,39 @@ footer p {
     }
 
     /* ------- contact page -------- */
-.contact-landing {
-    padding: 40px 20px;
-}
+    .contact-landing {
+        padding: 40px 20px;
+    }
 
-.contact-form{
-    padding: 40px;
-    border-radius: 20px;
-}
+    .contact-form {
+        padding: 40px;
+        border-radius: 20px;
+    }
 
-.contact-form input, .contact-form textarea{
-    background-color: transparent;
-    outline: none;
-    color: white;
-}
+    .contact-form input,
+    .contact-form textarea {
+        background-color: transparent;
+        outline: none;
+        color: white;
+    }
 
-.contact-form input:focus{
-    background-color: transparent;
-    color: white;
-    outline: none;
-}
+    .contact-form input:focus {
+        background-color: transparent;
+        color: white;
+        outline: none;
+    }
 
-.contact-form input::placeholder{
-    color: var(--sub-text-color);
-}
+    .contact-form input::placeholder {
+        color: var(--sub-text-color);
+    }
+
+    /* product page */
+    .product-page {
+        background-image: url('./assets/bg-boxes.svg');
+        padding: 20px 30px;
+        width: 100vw;
+        max-width: 1440px;
+        height: max-content;
+        margin: auto;
+    }
 }
